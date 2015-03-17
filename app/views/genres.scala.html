@@ -1,0 +1,7 @@
+@(genres: List[Genre])
+<h1> Neurolib project </h1>
+<ul>
+    @for(g <- genres) {
+        <li>@g.getName</li>
+    }
+</ul>
