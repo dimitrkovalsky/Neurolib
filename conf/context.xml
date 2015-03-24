@@ -16,7 +16,7 @@
 
     <context:spring-configured/>
     <context:annotation-config/>
-    <context:component-scan base-package="controllers, services"/>
+    <context:component-scan base-package="controllers, services, preloaders"/>
     <neo4j:repositories base-package="repositories"/>
 
     <bean id="graphDatabaseService" name="graphDatabaseService"

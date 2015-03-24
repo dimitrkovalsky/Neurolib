@@ -1,8 +1,9 @@
 package utils;
 
-import services.BookService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import services.BookService;
+import services.UserService;
 
 /**
  * User: dimitr
@@ -14,8 +15,13 @@ public class ServiceFactory {
 
     private static BookService bookService = context.getBean(BookService.class);
 
+    private static UserService userService = context.getBean(UserService.class);
+
     public static BookService getBookService() {
         return bookService;
+    }
+    public static UserService getUserService() {
+        return userService;
     }
 
 }

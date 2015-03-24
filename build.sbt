@@ -38,4 +38,4 @@ libraryDependencies ++= Seq(
 
 unmanagedResourceDirectories in Test <+= baseDirectory(_ / "target/web/public/test")
 
-resolvers += "neo4j-release-repository" at "http://m2.neo4j.org/releases"
+resolvers += "neo4j-release-repository" at "http://m2.neo4j.org/content/repositories/releases"
